@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E6 homework - Fibonachi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <form method="GET" action="/number">
+  <label for="fibonacci">Enter number to calculate (between 1 and 3000):</label>
+  <input type="number" name="number1" min="1" max="3000">
+  <input type="submit">
+</form>
+    {% if num %}
+      <h2>Fibonacci number for {{num}} is: </h2>
+      <p style="overflow-wrap:break-word">  {{ fb }}!</p>
+    {% else %}
+    
+    {% endif %}
+</div>
+
+</body>
+</html>
